@@ -8,12 +8,12 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 82
+_G.MinTimer = 100
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Dect time",
-        Duration = 82,
+        Title = "Looking at the time yk yk",
+        Duration = 100,
         Text = text
     })
 end
@@ -36,7 +36,7 @@ if game.GameId == 578392296 then
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-    notify("AFK On")
+    notify("Script is running fine")
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
