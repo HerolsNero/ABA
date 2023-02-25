@@ -44,7 +44,7 @@ if game.GameId == 578392296 then
         return time
     end
 
-    if timerCheck() <= _G.MinTimer then
+      if timerCheck() <= _G.MinTimer then
         notify("Waiting for reward")
         repeat
             task.wait()
@@ -52,11 +52,11 @@ if game.GameId == 578392296 then
         notify("Server Hopping")
         task.wait(1)
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Serverhop.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     else
         notify("Server Hopping")
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Serverhop.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
     end
 
 end
