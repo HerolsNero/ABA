@@ -51,11 +51,11 @@ if game.GameId == 578392296 then
         notify("Server Hopping")
         task.wait(1)
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Serverhop.lua", true))()
     else
         notify("Server Hopping")
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Serverhop.lua", true))()
     end
 
 end
