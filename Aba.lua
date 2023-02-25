@@ -2,7 +2,7 @@ repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(true)
-task.wait(4)
+task.wait(5)
 if game.PlaceId == 5411459567 then
     repeat
         task.wait(1)
@@ -44,7 +44,7 @@ if game.GameId == 578392296 then
     end
 
       if timerCheck() <= _G.MinTimer then
-        notify("Waiting for reward")
+        notify("Waiting for cash")
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
