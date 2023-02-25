@@ -1,8 +1,7 @@
 repeat
     wait()
 until game.Loaded
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(10)
+game:GetService("RunService"):Set3dRenderingEnabled(true)
 task.wait(4)
 if game.PlaceId == 5411459567 then
     repeat
@@ -22,10 +21,10 @@ end
 local function serverHop()
     if syn then
         syn.queue_on_teleport(
-            'loadstring(game:HttpGet("https://https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()')
+            'loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()')
     else
         queue_on_teleport(
-            'loadstring(game:HttpGet("https://https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()')
+            'loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABA/main/AFK.lua", true))()')
     end
 
 end
@@ -52,11 +51,11 @@ if game.GameId == 578392296 then
         notify("Server Hopping")
         task.wait(1)
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     else
         notify("Server Hopping")
         serverHop()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RZiln/GayBloxScripts/master/ABA/ServerHop.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     end
 
 end
