@@ -1,7 +1,7 @@
 repeat
     wait()
 until game.Loaded
-game:GetService("RunService"):Set3dRenderingEnabled(true)
+game:GetService("RunService"):Set3dRenderingEnabled(false)
 task.wait(5)
 if game.PlaceId == 5411459567 then
     repeat
@@ -10,13 +10,7 @@ if game.PlaceId == 5411459567 then
 end
 _G.MinTimer = 100
 
-local function notify(text)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Looking at the time yk yk",
-        Duration = 100,
-        Text = text
-    })
-end
+
 
 local function serverHop()
     if syn then
@@ -31,12 +25,11 @@ end
 
 if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
-        notify("Joining AFK World!!")
         serverHop()
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-    notify("Script is running fine")
+  
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
@@ -44,18 +37,17 @@ if game.GameId == 578392296 then
     end
 
       if timerCheck() <= _G.MinTimer then
-        notify("Waiting for Cash")
+ 
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        notify("Alr time to dip")
         task.wait(1)
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     else
-        notify("Alr time to dip")
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     end
 
 end
+Performance()
