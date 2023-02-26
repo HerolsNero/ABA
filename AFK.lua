@@ -41,7 +41,7 @@ if game.GameId == 578392296 then
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        task.wait(1)
+        task.wait(0.1)
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     else
