@@ -2,10 +2,10 @@ repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(true)
-task.wait(2)
+task.wait(.1)
 if game.PlaceId == 5411459567 then
     repeat
-        task.wait(1)
+        task.wait(.1)
     until game.Workspace.Message
 end
 _G.MinTimer = 80
