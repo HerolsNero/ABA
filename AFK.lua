@@ -8,12 +8,12 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 100
+_G.MinTimer = 80
 
 local function notify(text)
     game.StarterGui:SetCore("SendNotification", {
         Title = "Looking at the time yk yk",
-        Duration = 100,
+        Duration = 80,
         Text = text
     })
 end
