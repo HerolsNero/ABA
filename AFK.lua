@@ -1,7 +1,7 @@
 repeat
     wait()
 until game.Loaded
-game:GetService("RunService"):Set3dRenderingEnabled(true)
+game:GetService("RunService"):Set3dRenderingEnabled(false)
 task.wait(.1)
 if game.PlaceId == 5411459567 then
     repeat
@@ -32,12 +32,9 @@ end
 
 if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
-         notify("Joining AFK World!!")
-        serverHop()
+serverHop()
         game:GetService('TeleportService'):Teleport(5411459567)
     end
-
-    notify("Script is running fine")
   
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
