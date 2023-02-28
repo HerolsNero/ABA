@@ -8,7 +8,7 @@ if game.PlaceId == 5411459567 then
         task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 87
+_G.MinTimer = 100
 
 
 
