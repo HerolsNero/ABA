@@ -51,4 +51,4 @@ if game.GameId == 578392296 then
     end
 
 end
-Performance(
+Performance()
