@@ -1,14 +1,15 @@
+
 repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(true)
-task.wait(0.1)
+task.wait(5)
 if game.PlaceId == 5411459567 then
     repeat
-        task.wait(0.1)
+        task.wait(1)
     until game.Workspace.Message
 end
-_G.MinTimer = 85
+_G.MinTimer = 100
 
 
 
@@ -50,4 +51,4 @@ if game.GameId == 578392296 then
     end
 
 end
-Performance()
+Performance(
