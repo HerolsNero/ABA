@@ -52,3 +52,4 @@ if game.GameId == 578392296 then
 end
 Performance()
 setfpscap(15)
+print("working")
