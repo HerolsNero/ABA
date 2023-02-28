@@ -1,4 +1,3 @@
-
 repeat
     wait()
 until game.Loaded
