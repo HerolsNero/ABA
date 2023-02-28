@@ -51,4 +51,4 @@ if game.GameId == 578392296 then
 
 end
 Performance()
-setfpscap(10)
+setfpscap(15)
