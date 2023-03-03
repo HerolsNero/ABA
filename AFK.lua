@@ -10,6 +10,16 @@ if game.PlaceId == 5411459567 then
 end
 _G.MinTimer = 100
 
+local function notify(text)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "looking at the time",
+        Duration = 15,
+                    Title = "Made by Hero LOL",
+        Duration = 20,
+        Text = text
+    })
+end
+
 
 
 local function serverHop()
@@ -29,7 +39,8 @@ if game.GameId == 578392296 then
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-  
+      notify("Waiting for the reward")
+    notify("Script is running!")
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
