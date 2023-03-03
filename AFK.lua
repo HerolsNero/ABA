@@ -39,8 +39,8 @@ if game.GameId == 578392296 then
         game:GetService('TeleportService'):Teleport(5411459567)
     end
 
-      notify("Waiting for the reward")
-    notify("Script is running!")
+      notify("Script is running")
+    notify("Waiting for the reward")
     local function timerCheck()
         local timer = game.Workspace.Message.Text:split(" ")
         local time = tonumber(timer[1])
