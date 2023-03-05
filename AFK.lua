@@ -2,25 +2,13 @@ repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(true)
-task.wait(5)
+task.wait(6)
 if game.PlaceId == 5411459567 then
     repeat
         task.wait(1)
     until game.Workspace.Message
 end
 _G.MinTimer = 100
-
-local function notify(text)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "looking at the time",
-        Duration = 15,
-                    Title = "Made by Hero LOL",
-        Duration = 20,
-        Text = text
-    })
-end
-
-
 
 local function serverHop()
     if syn then
@@ -37,14 +25,6 @@ if game.GameId == 578392296 then
     if game.PlaceId ~= 5411459567 then
         serverHop()
         game:GetService('TeleportService'):Teleport(5411459567)
-    end
-
-      notify("Script is running")
-    notify("Waiting for the reward")
-    local function timerCheck()
-        local timer = game.Workspace.Message.Text:split(" ")
-        local time = tonumber(timer[1])
-        return time
     end
 
       if timerCheck() <= _G.MinTimer then
