@@ -1,7 +1,7 @@
 repeat
     wait()
 until game.Loaded
-task.wait(5)
+task.wait(7)
 if game.PlaceId == 5411459567 then
     repeat
         task.wait(1)
