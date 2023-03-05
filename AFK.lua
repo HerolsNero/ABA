@@ -1,7 +1,6 @@
 repeat
     wait()
 until game.Loaded
-game:GetService("RunService"):Set3dRenderingEnabled(true)
 task.wait(6)
 if game.PlaceId == 5411459567 then
     repeat
