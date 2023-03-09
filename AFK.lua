@@ -2,14 +2,14 @@ repeat
     wait()
 until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
-task.wait(3)
+task.wait(2)
 if game.PlaceId == 5411459567 then
     repeat
         task.wait(1)
     until game.Workspace.Message
 end
 
-_G.MinTimer = 100
+_G.MinTimer = 80
 
 
 
@@ -42,7 +42,7 @@ if game.GameId == 578392296 then
         repeat
             task.wait()
         until timerCheck() > _G.MinTimer
-        task.wait(0.1)
+        task.wait(1)
         serverHop()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HerolsNero/ABAs/main/Hopped.lua", true))()
     else
