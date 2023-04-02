@@ -52,3 +52,4 @@ if game.GameId == 578392296 then
 
 end
 print("working")
+performance();
