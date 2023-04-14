@@ -9,7 +9,7 @@ if game.PlaceId == 5411459567 then
     until game.Workspace.Message
 end
 
-_G.MinTimer = 98
+_G.MinTimer = 78
 
 
 
